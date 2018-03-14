@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <br>
+  <form>
+    OData Endpoint<br>
+    <input type="text" name="odataurl" value="" style="width: 450px;height:20px;">
+    <br>
+    Username:<br>
+    <input type="text" name="username" value="" style="height: 20px;" >
+    <br>
+    Password:<br>
+    <input type="password" name="password" value="" style="height: 20px;">
+    <br><br>
+     <input type="button" value="Submit"
+        onclick="google.script.run
+            .withSuccessHandler(google.script.host.close)
+            .itemAdd(this.parentNode)" />
+    </form>
+</html>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <form>
+     <select name="table_list">
+       <? for (var i = 0; i < data.length; i++) { ?>
+        <option>
+          <?= data[i] ?>
+        </option>
+        <? } ?>
+
+      </select>
+      <br><br><br>
+           <input type="button" value="Select"
+        onclick="google.script.run
+            .withSuccessHandler(google.script.host.close)
+            .fetchData(this.parentNode)" />
+    </form>
+  </body>
+</html>
+
+
